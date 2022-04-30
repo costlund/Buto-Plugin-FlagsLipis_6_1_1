@@ -1,30 +1,17 @@
 # Buto-Plugin-FlagsLipis_6_1_1
-Show flags in span tags.
+Show flags with svg via a widget.
 
-## Github
-```
-https://github.com/lipis/flag-icons
-```
-
-## Include
-
+## Widget
 ```
 type: widget
 data:
   plugin: flags/lipis_6_1_1
-  method: include
+  method: flag
+  data:
+    flag: se
 ```
 
-## Usage
-Use them in span tags.
+## Source
 ```
-type: span
-attribute: 
-  class: fi fi-se
-```
-Squared version by adding fis.
-```
-type: span
-attribute: 
-  class: fi fi-se fis
+https://github.com/lipis/flag-icons
 ```

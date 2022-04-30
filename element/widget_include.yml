@@ -1,7 +1,0 @@
--
-  type: widget
-  data:
-    plugin: 'include/js'
-    method: include
-    data:
-      src: '/plugin/flags/lipis_6_1_1/css/flag-icons.css'

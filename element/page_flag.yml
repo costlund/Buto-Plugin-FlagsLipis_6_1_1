@@ -1,0 +1,7 @@
+-
+  type: widget
+  data:
+    plugin: flags/lipis_6_1_1
+    method: flag
+    data:
+      flag: se
