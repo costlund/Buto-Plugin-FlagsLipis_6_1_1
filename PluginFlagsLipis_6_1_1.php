@@ -28,11 +28,6 @@ class PluginFlagsLipis_6_1_1{
      */
     return $flag;
   }
-  /**
-   * Create one file of all flags.
-   * This page is only for webmaster to maintain this plugin.
-   * http://localhost/?webmaster_plugin=flags/lipis_6_1_1&page=create_file
-   */
   public function page_create_file(){
     $this->webmaster_check();
     $scan = wfFilesystem::getScandir(__DIR__.$this->flags_dir);
