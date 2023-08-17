@@ -1,16 +1,20 @@
-version: 1.3.0
+version: 1.4.0
 history:
+  1.4.0:
+    date: '2023-08-17'
+    title: 'PHP 8.2'
+    description: 'Changes according to PHP version 8.2.'
   1.3.0:
     date: '2022-05-12'
     title: 'Malformed yml'
     description: "Malformed yml file. Clean up flags.yml because not working on production server. Removed \\\nn. Replace \\\" with \". Enclose content with '."
   1.2.0:
     date: '2022-04-30'
-    title: 'Format'
+    title: Format
     description: 'Remove using css classes. Using widget instead to embed svg content.'
   1.1.0:
     date: '2022-04-07'
-    title: 'Method'
+    title: Method
     description: 'Add method getFlagElement.'
   1.0.0:
     date: '2022-04-05'

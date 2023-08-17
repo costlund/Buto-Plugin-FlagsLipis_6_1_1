@@ -35,7 +35,7 @@ class PluginFlagsLipis_6_1_1{
     $flags = new PluginWfYml($this->flags_file);
     foreach($scan as $v){
       $c = wfFilesystem::getContents('/plugin/flags/lipis_6_1_1'.$this->flags_dir.'/'.$v);
-      $k = str_replace('.svg', '', $v);
+      $k = wfPhpfunc::str_replace('.svg', '', $v);
       /**
        * Malformed data...
        * Working in development environment but not in production server.
@@ -80,7 +80,7 @@ class PluginFlagsLipis_6_1_1{
     if(!$content){
       $content = "(flag $flag missing)";
     }
-    $content = str_replace("<svg", '<svg width="16"', $content);
+    $content = wfPhpfunc::str_replace("<svg", '<svg width="16"', $content);
     $element = new PluginWfYml(__DIR__.'/element/'.__FUNCTION__.'.yml');
     $element->setByTag(array('content' => $content));
     wfDocument::renderElement($element);
